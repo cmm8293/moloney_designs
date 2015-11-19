@@ -1,0 +1,88 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* All */
+
+body {
+  font-family: "Times New Roman", Times, Serif;
+  background: url("background.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Logo */
+.logo h1 {
+  font-size: 3em;
+  color: white;
+}
+
+/* Navagation Bar */
+
+.logo {
+  text-align: center;
+}
+
+.navbar {
+  background-color: white;
+  width: 80%;
+  float: center;
+  margin-left:auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+.navbar .navbar-nav {
+  text-align: center;
+  width: 100%;
+}
+.nav-item{
+  float: none;
+  display: inline-block;
+  width: 20%;
+}
+
+.dropdown{
+  float: none;
+  display: inline-block;
+  width: 20%;
+}
+
+.dropdown-menu {
+  width: 100%;
+}
+
+/* Body */
+
+.body{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.jumbotron {
+  width: 80%;
+  float: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-radius: 10px;
+}
+
+
+/* Footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+

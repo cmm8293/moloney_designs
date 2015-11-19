@@ -1,0 +1,14 @@
+<%= link_to "Etsy Account", @link %>
+<br>
+<br>
+<%= @name %>
+<br>
+<br>
+<% @listings.each do |listing| %>
+	<%= link_to image_tag(listing.image().square), listing.url %>
+	<%= listing.title %>
+	<br>
+	<%= link_to "Product Link", listing.url %>
+	<br>
+	<br>
+<% end %>
