@@ -1,0 +1,22 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* All */
+
+body {
+  font-family: "Times New Roman", Times, Serif;
+  background: url("background.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.btn {
+  margin-bottom: 5px;
+}
+
+
+
+
+

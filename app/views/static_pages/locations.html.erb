@@ -1,0 +1,229 @@
+<% provide(:title, 'Locations') %>
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+
+<script>
+function initialize()
+{
+  //creating the maps
+  
+  //cotton and cashmere
+  var latlng = {lat: 47.627579, lng: -122.520735};
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 15,
+    center: latlng,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  });
+  var marker = new google.maps.Marker({
+    position: latlng,
+    map: map,
+    title: 'Cotton and Cashmere'
+  });
+  
+  //giddy up jane
+  var latlng2 = {lat: 38.638851, lng: -90.388301};
+  var map2 = new google.maps.Map(document.getElementById('map2'), {
+    zoom: 15,
+    center: latlng2,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  });
+  var marker = new google.maps.Marker({
+    position: latlng2,
+    map: map2,
+    title: 'Giddy Up Jane'
+  });
+  
+  //cresant coast
+  var latlng3 = {lat: 38.648705, lng: -90.333047};
+  var map3 = new google.maps.Map(document.getElementById('map3'), {
+    zoom: 15,
+    center: latlng3,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  });
+  var marker = new google.maps.Marker({
+    position: latlng3,
+    map: map3,
+    title: 'Cresant Coast'
+  });
+  
+  //back at the ranch
+  var latlng4 = {lat: 35.688667, lng: -105.934712};
+  var map4 = new google.maps.Map(document.getElementById('map4'), {
+    zoom: 15,
+    center: latlng4,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  });
+  var marker = new google.maps.Marker({
+    position: latlng4,
+    map: map4,
+    title: 'Back At The Ranch'
+  });
+  
+  //pret
+  var latlng5 = {lat: 38.144663, lng: -121.258149};
+  var map5 = new google.maps.Map(document.getElementById('map5'), {
+    zoom: 15,
+    center: latlng5,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  });
+  var marker = new google.maps.Marker({
+    position: latlng5,
+    map: map5,
+    title: 'Pret'
+  });
+  
+  //lesley clothing
+  var latlng6 = {lat: 25.735851, lng: -80.239142};
+  var map6 = new google.maps.Map(document.getElementById('map6'), {
+    zoom: 15,
+    center: latlng6,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  });
+  var marker = new google.maps.Marker({
+    position: latlng6,
+    map: map6,
+    title: 'Lesley Clothing'
+  });
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+</script>
+
+<div class="row">
+	
+  <!-- Begin the section about Giddy Up Jane -->
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <div class="map" id="map2" style="width:100%;height:300px;"></div>
+      <div class="caption">
+        <h3>Giddy Up Jane</h3>
+        <p style="font-size:100%">
+       		9670 Clayton Road
+       		<br>
+       		St. Louis, MO 63124
+       		<br>
+       		(314) 993-9944
+        </p>
+        <!-- Correct Buttons -->
+        <p>
+       		<a href="http://www.giddyupjane.com/" class="btn btn-default" role="button" style="width:100%">Website</a> 
+	       	<a href="https://www.facebook.com/Giddyup-Jane-87719907421/" class="btn btn-default" role="button" style="width:100%">Facebook</a>
+	       	<a href="https://www.instagram.com/giddyupjane/" class="btn btn-default" role="button" style="width:100%">Instagram</a> 
+	        <a href="https://twitter.com/giddyupjanestl" class="btn btn-default" role="button" style="width:100%">Twitter</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Begin the section about Crescent Coast -->
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <div class="map" id="map3" style="width:100%;height:300px;"></div>
+      <div class="caption">
+        <h3>Crescent Coast</h3>
+        <p style="font-size:100%">
+       		169 Carondelet Plaza
+       		<br>
+       		Clayton, MO 63105
+       		<br>
+       		(314) 726-7979
+        </p>
+        <!-- corrected buttons -->
+        <p>
+	       <a href="http://www.crescentcoaststl.com/" class="btn btn-default" role="button" style="width:100%">Website</a> 
+	       <a href="https://www.facebook.com/crescentcoast" class="btn btn-default" role="button" style="width:100%">Facebook</a>
+	       <a href="http://instagram.com/crescentcoast" class="btn btn-default" role="button" style="width:100%">Instagram</a> 
+	       <a href="https://twitter.com/crescentcoast" class="btn btn-default" role="button" style="width:100%">Twitter</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Begin the section about Back at the Ranch -->
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <div class="map" id="map4" style="width:100%;height:300px;"></div>
+      <div class="caption">
+        <h3>Back at the Ranch</h3>
+        <p style="font-size:100%">
+       		209 East Marcy Street
+       		<br>
+       		Santa Fe, NM  87501
+       		<br>
+       		(505) 989-8110
+        </p>
+        <!-- corrected buttons -->
+        <p>
+	       	<a href="http://backattheranch.com/" class="btn btn-default" role="button" style="width:100%">Website</a> 
+	       	<a href="https://www.facebook.com/Back-at-the-Ranch-Cowboy-Boots-56490528471/" class="btn btn-default" role="button" style="width:100%">Facebook</a>
+	       	<a href="https://www.instagram.com/back_at_the_ranch/" class="btn btn-default" role="button" style="width:100%">Instagram</a> 
+	       	<a href="https://twitter.com/cowboyboots4u" class="btn btn-default" role="button" style="width:100%">Twitter</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Begin the section about Lesley Clothing -->
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <div class="map" id="map6" style="width:100%;height:300px;"></div>
+      <div class="caption">
+        <h3>Lesley Clothing</h3>
+        <p style="font-size:100%">
+       		2829 Bird Avenue
+       		<br>
+       		Miami, FL 33133
+       		<br>
+       		(305) 442-2212
+        </p>
+        <!-- Corrected button group -->
+        <p>
+        	<a href="http://www.lesleyclothing.com/" class="btn btn-default" role="button" style="width: 100%">Website</a> 
+        	<a href="https://www.facebook.com/Lesley-Clothing-179211545572501/" class="btn btn-default" role="button" style="width: 100%">Facebook</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Begin section on Cotton & Cashmere -->
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <div class="map" id="map" style="width:100%;height:300px;"></div>
+      <div class="caption">
+        <h3>Cotton And Cashmere</h3>
+        <p style="font-size:100%">
+       		382 Madison Avenue N.
+       		<br>
+       		Bainbridge Island, WA 98110
+       		<br>
+       		(206) 842-4300
+        </p>
+        <p>
+        	<!-- Corrected Buttons -->
+        	<a href="https://www.facebook.com/candcconsignment/" class="btn btn-default" role="button" style="width:100%">Facebook</a>
+        	<a href="https://www.instagram.com/cottonandcashmere/" class="btn btn-default" role="button" style="width:100%">Instagram</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Begin the section about Pret -->
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <div class="map" id="map5" style="width:100%;height:300px;"></div>
+      <div class="caption">
+        <h3>Pret</h3>
+        <p style="font-size:100%">
+       		15 Downtown Mall
+       		<br>
+       		Lodi, CA 95240
+       		<br>
+       		(209) 334-2239
+        </p>
+        <p>
+        </p>
+      </div>
+    </div>
+  </div>
+  
+</div>
