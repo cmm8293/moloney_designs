@@ -12,12 +12,12 @@ gem 'jbuilder',       '2.2.3'
 gem 'sdoc',           '0.4.0', group: :doc
 gem 'etsy',           '0.3.1'
 gem 'will_paginate'
+gem 'spring',      '1.1.3'
 
 group :development, :test do
   gem 'sqlite3',     '1.3.9'
   gem 'byebug',      '3.4.0'
   gem 'web-console', '2.0.0.beta3'
-  gem 'spring',      '1.1.3'
 end
 
 group :test do
